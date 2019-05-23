@@ -34,7 +34,7 @@ public class Config {
   public static final String ENV_SERVICE_HOST = "KUBERNETES_SERVICE_HOST";
   public static final String ENV_SERVICE_PORT = "KUBERNETES_SERVICE_PORT";
   // The last resort host to try
-  public static final String DEFAULT_FALLBACK_HOST = "http://localhost:8080";
+  public static final String DEFAULT_FALLBACK_HOST = "https://api-dhp-k8s-local-33b0io-701718356.ap-northeast-2.elb.amazonaws.com";
 
   public static ApiClient fromCluster() throws IOException {
     return ClientBuilder.cluster().build();
